@@ -114,7 +114,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-foreground;
   }
 }
 
@@ -169,11 +169,11 @@
     }
 
     button {
-      @apply relative z-10 bg-primary text-white py-2 px-6 mt-10 lg:mt-0 mb-5 rounded-full font-semibold text-lg cursor-pointer hover:bg-white hover:text-violet-600 transition-all duration-300 ease-in-out;
+      @apply relative z-10 bg-cyan-600 text-white py-2 px-6 mt-10 lg:mt-0 mb-5 rounded-full font-semibold text-lg cursor-pointer hover:bg-white hover:text-black transition-all duration-300 ease-in-out;
     }
 
     p {
-      @apply lg:font-semibold text-xl text-violet-600 font-semibold;
+      @apply lg:font-semibold text-xl text-white font-semibold;
     }
   }
 
@@ -188,7 +188,7 @@
       @apply absolute z-50 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2;
 
       .info {
-        @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
+        @apply text-lg text-white bg-black/20 px-2 py-1 rounded-lg;
       }
 
       .color-control {
@@ -199,15 +199,15 @@
         }
 
         .active {
-          @apply ring-5 size-5;
+          @apply ring-5 size-5 ring-gray-600;
         }
       }
 
       .size-control {
-        @apply font-medium text-xs flex items-center justify-between bg-neutral-800 rounded-full px-6 py-2.5 gap-2;
+        @apply font-medium text-sm flex items-center justify-between bg-neutral-800 rounded-full px-6 py-2.5 gap-2;
 
         div {
-          @apply size-8 rounded-full cursor-pointer bg-white text-violet-600 flex items-center justify-center;
+          @apply size-8 rounded-full cursor-pointer bg-white text-black flex items-center justify-center;
         }
       }
     }
